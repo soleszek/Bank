@@ -13,7 +13,7 @@ public class CorporateAccount extends Account {
     }
 
     public String toString() {
-        return super.toString() + " ";
+        return super.toString() + ", NIP: " + nip + ", REGON: " + regon + ", typ rachunku: " + accountTypes.CORPORATE;
     }
 
     public int getNip() {

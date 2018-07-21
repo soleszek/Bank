@@ -7,4 +7,8 @@ public class PersonalAccount extends Account {
     public accountTypes getType() {
         return accountTypes.PERSONAL;
     }
+
+    public String toString() {
+        return super.toString() + ", typ rachunku to: " + accountTypes.PERSONAL;
+    }
 }

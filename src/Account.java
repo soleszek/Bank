@@ -30,7 +30,7 @@ public abstract class Account {
 
     public String toString (){
 
-        return "";
+        return "Dane klienta to: " + clientData + ", numer rachunku: " + number + ", stan rachunku: " + isOpen;
     }
 
 

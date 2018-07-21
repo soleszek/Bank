@@ -3,6 +3,7 @@ public class Bank {
         PersonalAccount sylwester = new PersonalAccount("Sylwester Oleszek", 823000110, true);
         CorporateAccount arkadia = new CorporateAccount("Arkadia", 823000111, true, 2343445, 5556778);
 
-
+        sylwester.toString();
+        arkadia.toString();
     }
 }
