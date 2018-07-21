@@ -10,16 +10,24 @@ public abstract class Account {
         this.isOpen = state;
     }
 
-    public void openAccount(){
+    private void openAccount(){
         isOpen = true;
         System.out.println("Rachunek jest aktywny");
     }
-    public void closeAccount(){
+    private void closeAccount(){
         isOpen = false;
         System.out.println("Rachunek jest nieaktywny");
     }
-    public void payMoney(){};
-    public void takeMoney(){};
+    public void payMoney(){
+        openAccount();
+        System.out.println("Srodki zostały wpłacone");
+        closeAccount();
+    };
+    public void takeMoney(){
+        openAccount();
+        System.out.println("Srodki zostały wypłacone");
+        closeAccount();
+    };
 
     public enum accountTypes {
         PERSONAL,
