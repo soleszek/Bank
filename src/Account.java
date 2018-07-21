@@ -11,24 +11,26 @@ public abstract class Account {
     }
 
     public void openAccount(){
-
+        isOpen = true;
+        System.out.println("Rachunek jest aktywny");
     }
     public void closeAccount(){
-
+        isOpen = false;
+        System.out.println("Rachunek jest nieaktywny");
     }
     public void payMoney(){};
     public void takeMoney(){};
 
     public enum accountTypes {
-        personal,
-        corporate;
+        PERSONAL,
+        CORPORATE;
     }
 
-    public void getType(){};
+    public abstract accountTypes getType();
 
     public String toString (){
 
-        return " ";
+        return "";
     }
 
 

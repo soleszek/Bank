@@ -8,6 +8,10 @@ public class CorporateAccount extends Account {
         this.regon = regon;
     }
 
+    public accountTypes getType() {
+        return accountTypes.CORPORATE;
+    }
+
     public String toString() {
         return super.toString() + " ";
     }
