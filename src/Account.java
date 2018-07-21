@@ -24,6 +24,12 @@ public abstract class Account {
         corporate;
     }
 
+    public void getType(){};
+
+    public String toString (){
+
+        return " ";
+    }
 
 
     public String getClientData() {
