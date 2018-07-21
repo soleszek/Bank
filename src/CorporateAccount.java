@@ -1,8 +1,9 @@
-public class CorporateAccount extends Bank {
+public class CorporateAccount extends Account {
     private int nip;
     private int regon;
 
-    public CorporateAccount(int nip, int regon) {
+    public CorporateAccount(String clientData, int number, boolean isOpen, int nip, int regon) {
+        super(clientData, number, isOpen);
         this.nip = nip;
         this.regon = regon;
     }
